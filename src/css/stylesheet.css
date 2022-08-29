@@ -1,0 +1,91 @@
+:root{
+    --header-yellow:#E9EBB2;
+    --brown:#654C4F;
+    --green:#1B998B;
+    --baby-blue:#CBDFFF;
+}
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: var(--header-yellow);
+    padding: 1.5em;
+    box-shadow: 1px 1px 15px rgb(170, 170, 170) ;
+}
+main p{
+    font-size: 1.1em;
+    line-height: 27px;
+}
+#logo{
+    width:6%;
+    float: left;
+}
+ul{
+    text-align: right;
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 8px;
+}
+li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+li a:hover{
+    color: var(--green);
+}
+h1, h3{
+    color: var(--brown);
+}
+main, form{
+    margin:1.3em;
+}
+form{
+    background-color: var(--baby-blue);
+    overflow:hidden;
+    border-radius:10px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+form p{
+    font-weight: 600;
+}
+input{
+    margin:10px;
+}
+button a{
+    text-decoration: none;
+}
+button a:visited{
+    text-decoration: none;
+}
+#submit-btn{
+    color:var(--green);
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 13px;
+    width: 6.5em;
+    background-color: var(--header-yellow);
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+#submit-btn:hover{
+  background-color:var(--green);
+  color:var(--header-yellow);
+  transition: 0.3s ease-in;
+}
+footer{
+    background-color: var(--header-yellow);
+    padding: 1.5em;
+    box-shadow: 1px 1px 15px rgb(170, 170, 170) ;
+}

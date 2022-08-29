@@ -63,12 +63,16 @@ input{
 }
 button a{
     text-decoration: none;
+    color:var(--green);
+}
+buttonh a:hover{
+    color:var(--header-yellow);
+    
 }
 button a:visited{
     text-decoration: none;
 }
 #submit-btn{
-    color:var(--green);
     font-size: 1.2em;
     font-weight: 600;
     padding: 13px;

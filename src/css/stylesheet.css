@@ -15,13 +15,16 @@ header{
     padding: 1.5em;
     box-shadow: 1px 1px 15px rgb(170, 170, 170) ;
 }
+nav{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 main p{
     font-size: 1.1em;
     line-height: 27px;
 }
 #logo{
-    width:6%;
-    float: left;
+    width:11%;
 }
 ul{
     text-align: right;
@@ -65,7 +68,7 @@ button a{
     text-decoration: none;
     color:var(--green);
 }
-buttonh a:hover{
+button a:hover{
     color:var(--header-yellow);
     
 }

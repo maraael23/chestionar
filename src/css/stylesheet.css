@@ -50,6 +50,9 @@ main, form{
     margin:1.3em;
 }
 form{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: var(--baby-blue);
     overflow:hidden;
     border-radius:10px;
@@ -57,6 +60,7 @@ form{
     width: 70%;
     margin: auto;
     margin-bottom: 60px;
+    
 }
 form p{
     font-weight: 600;
@@ -66,30 +70,24 @@ input{
 }
 button a{
     text-decoration: none;
-    color:var(--green);
-}
-button a:hover{
-    color:var(--header-yellow);
-    
-}
-button a:visited{
-    text-decoration: none;
 }
 #submit-btn{
     font-size: 1.2em;
     font-weight: 600;
     padding: 13px;
-    width: 6.5em;
-    background-color: var(--header-yellow);
+    width: 6.5em;;
     border: none;
     margin: 10px;
     border-radius: 10px;
-
+    background-color:var(--green);
+    
 }
-#submit-btn:hover{
-  background-color:var(--green);
-  color:var(--header-yellow);
-  transition: 0.3s ease-in;
+#submit-btn, button a{
+    color:white;
+}
+button a:hover, #submit-btn:hover{
+    background-color: var(--brown);
+    transition: 0.3s ease-in;
 }
 footer{
     background-color: var(--header-yellow);

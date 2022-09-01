@@ -1,95 +1,209 @@
-:root{
-    --header-yellow:#E9EBB2;
-    --brown:#654C4F;
-    --green:#1B998B;
-    --baby-blue:#CBDFFF;
+:root {
+    --header-yellow: #E9EBB2;
+    --brown: #654C4F;
+    --green: #1B998B;
+    --baby-blue: #CBDFFF;
 }
+
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
-body{
+
+body {
     margin: 0;
 }
-header{
+
+header {
     background-color: var(--header-yellow);
     padding: 1.5em;
-    box-shadow: 1px 1px 15px rgb(170, 170, 170) ;
+    box-shadow: 1px 1px 15px rgb(170, 170, 170);
 }
-nav{
-    display: grid;
-    grid-template-columns: 50% 50%;
+
+nav {
+    display: flex;
+    justify-content: space-between;
 }
-main p{
+
+#logo {
+    width: 6.5%;
+    height: auto;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.top-menu .links-wrapper {
+    position: relative;
+}
+
+.top-menu .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--baby-blue);
+    top: -5px;
+}
+.links{
+    margin:8px;
+    padding-inline:10px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    font-size:0.9em ;
+}
+.links a{
+
+    padding-top:7px;
+    padding-bottom:7px;
+}
+.dropdown span{
+    padding:5px 10px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.dropdown:hover .links {
+    height: max-content;
+    width: max-content;
+    text-align: left;
+}
+.dropdown:hover span{
+    background-color: var(--baby-blue);
+
+}
+.links:hover {
+    transition: all 1s 0ms ease-in;
+}
+
+.top-menu a, span {
+    list-style-type: none;
+    display: inline;
+    margin-inline: 8px;
+}
+
+.top-menu a, span {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.top-menu a:hover, .top-menu span:hover {
+    color: var(--brown);
+}
+
+main {
+    padding-inline: 1.8em;
+}
+
+main p {
     font-size: 1.1em;
     line-height: 27px;
 }
-#logo{
-    width:11%;
-}
-ul{
-    text-align: right;
-}
-ul li{
-    list-style-type: none;
-    display: inline;
-    margin: 8px;
-}
-li a{
-    text-decoration: none;
-    color:black;
-    font-weight: 600;
-    font-size: 1.2em;
-}
-li a:hover{
-    color: var(--green);
-}
-h1, h3{
+h1,h3 {
     color: var(--brown);
 }
-main, form{
-    margin:1.3em;
+
+h3 {
+    font-size: 1.7em;
 }
-form{
-    display: flexbox;
+
+main,form {
+    margin: 1.3em;
+}
+
+form {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-color: var(--baby-blue);
-    overflow:hidden;
-    border-radius:10px;
-    padding: 20px;
-    width: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 25px;
+    width: 50%;
     margin: auto;
     margin-bottom: 60px;
-    
+
 }
-form p{
+
+form div {
+    margin-left: 1.5em;
+}
+
+form p {
     font-weight: 600;
-}
-input{
-    margin:10px;
-}
-#submit{
     font-size: 1.2em;
+}
+
+input {
+    margin: 10px;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+#submit {
+    text-align: center;
+    font-size: 1.4em;
     text-decoration: none;
     font-weight: 600;
     padding: 13px;
     width: 7em;
+    height: auto;
     border: none;
     margin: 30px;
     border-radius: 10px;
-    
+    align-self: center;
+    box-shadow: 1px 1px 15px rgb(170, 170, 170);
+
 }
-#submit{
-    background-color:var(--header-yellow);
+
+#submit {
+    background-color: var(--header-yellow);
     color: var(--green);
 }
-#submit:hover{
+
+#submit:hover {
     background-color: var(--green);
-    color:var(--header-yellow);
+    color: var(--header-yellow);
     transition: 0.3s ease-in;
 }
-footer{
+
+footer {
     background-color: var(--header-yellow);
     padding: 1.5em;
-    box-shadow: 1px 1px 15px rgb(170, 170, 170) ;
+    box-shadow: 1px 1px 15px rgb(170, 170, 170);
+}
+
+@media screen and (max-width:768px) {
+    #logo {
+        width: 17%;
+    }
+    .top-menu a, span {
+        font-size: 1em;
+        padding-inline: 8px;
+        margin-inline:-4px;
+    }
+    .links{
+        margin-inline: -4px;
+    }
+    h1{
+        font-size:1.8em;
+        text-align: center;
+    }
+    main p{
+        font-size: 1.1em;
+    }
+    form{
+        width:80%;
+       
+    }
+    form div{
+        margin-left:1em;
+    }
 }

@@ -68,25 +68,24 @@ form p{
 input{
     margin:10px;
 }
-button a{
-    text-decoration: none;
-}
-#submit-btn{
+#submit{
     font-size: 1.2em;
+    text-decoration: none;
     font-weight: 600;
     padding: 13px;
-    width: 6.5em;;
+    width: 7em;
     border: none;
-    margin: 10px;
+    margin: 30px;
     border-radius: 10px;
-    background-color:var(--green);
     
 }
-#submit-btn, button a{
-    color:white;
+#submit{
+    background-color:var(--header-yellow);
+    color: var(--green);
 }
-button a:hover, #submit-btn:hover{
-    background-color: var(--brown);
+#submit:hover{
+    background-color: var(--green);
+    color:var(--header-yellow);
     transition: 0.3s ease-in;
 }
 footer{
